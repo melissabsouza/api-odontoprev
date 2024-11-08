@@ -1,7 +1,10 @@
 ## Dental Insurance API
 
 #### Visão Geral
+
 A API Dental Insurance gerencia dados de clínicas odontológicas, pacientes, dentistas e atendimentos, servindo como base para um aplicativo móvel de armazenamento de informações sobre sinistros odontológicos. Ela permite operações CRUD para essas entidades, oferecendo um maior controle para administração dos dados. Essas informações serão usadas para rastrear sinistros relacionados aos atendimentos.
+
+De acordo com o feedback da Sprint 1 na disciplina de Banco de Dados, foi aconselhado mudar CPF e CNPJ para o tipo String. Implementamos a operação PUT (atualização) nos endpoints. A questão dos relacionamentos ainda não foi resolvida, mas será abordada na próxima sprint, juntamente com a inclusão de testes e validações dos campos.
 
 -- 
 ### Endpoints
@@ -542,10 +545,9 @@ corrigir essas inconsistências para garantir um mapeamento mais adequado e a in
 ---
 # Vídeo
 
-🔗 [pitch]()
+🔗 [Pitch](https://www.youtube.com/watch?v=OHVeFk5sXEg)
 ---
 
----
 # Cronograma
 
 🔗[Trello](https://trello.com/invite/b/665493cc36b64a32044a7b22/ATTI49dd2fd15fefc143c1838249b562bcd5982876D7/gestao-de-projetos-challenge)
