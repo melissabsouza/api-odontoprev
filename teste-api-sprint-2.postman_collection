@@ -1,0 +1,386 @@
+{
+	"info": {
+		"_postman_id": "6e1d5201-d9c2-43e2-8584-b6cceae7c312",
+		"name": "Sprint 2",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "34069903"
+	},
+	"item": [
+		{
+			"name": "clinicas",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/clinicas",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"clinicas"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "clinicas",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"cnpj\": \"12345678000195\",\r\n    \"nome\": \"Clínica Exemplo\",\r\n    \"usuario\": {\r\n        \"email\": \"joao@example.com\",\r\n        \"senha\": \"123456\"\r\n    },\r\n    \"endereco\": {\r\n        \"rua\": \"Rua das Flores\",\r\n        \"numero\": 21,\r\n        \"complemento\": \"Ao lado da escola\",\r\n        \"bairro\": \"Centro\",\r\n        \"cidade\": \"São Paulo\",\r\n        \"estado\": \"SP\",\r\n        \"cep\": \"01234567\"\r\n    },\r\n    \"telefone\":\r\n        {\r\n            \"numero\": \"(11) 98765-4321\",\r\n            \"tipo\": \"RESIDENCIAL\"\r\n        }\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/clinicas",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"clinicas"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "clinicas",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"cnpj\": \"12345678000195\",\r\n    \"nome\": \"Clínica Exemplo\",\r\n    \"usuario\": {\r\n        \"email\": \"joao@example.com\",\r\n        \"senha\": \"123456\"\r\n    },\r\n    \"endereco\": {\r\n        \"rua\": \"Rua das Flores\",\r\n        \"numero\": 21,\r\n        \"complemento\": \"Ao lado da escola\",\r\n        \"bairro\": \"Centro\",\r\n        \"cidade\": \"São Paulo\",\r\n        \"estado\": \"SP\",\r\n        \"cep\": \"01234567\"\r\n    },\r\n    \"telefone\":\r\n        {\r\n            \"numero\": \"(11) 98765-4321\",\r\n            \"tipo\": \"RESIDENCIAL\"\r\n        }\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/clinicas/12345678000195",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"clinicas",
+						"12345678000195"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "pacientes",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/pacientes",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"pacientes"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "pacientes",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"cpf\": 12345678900,\r\n    \"nome\": \"John Doe\",\r\n    \"dataNascimento\": \"1990-01-01\",\r\n    \"genero\": \"Masculino\",\r\n    \"clinica\": {\r\n        \"cnpj\": 23456789000101\r\n    },\r\n    \"endereco\": {\r\n        \"rua\": \"Rua Exemplo\",\r\n        \"numero\": 123,\r\n        \"complemento\": \"Apto 1\",\r\n        \"bairro\": \"Bairro Exemplo\",\r\n        \"cidade\": \"Cidade Exemplo\",\r\n        \"estado\": \"Estado Exemplo\",\r\n        \"cep\": 12345678\r\n    },\r\n    \"telefone\": {\r\n        \"numero\": \"123456789\",\r\n        \"tipo\": \"CELULAR\"\r\n    }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/pacientes",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"pacientes"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "dentistas",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/dentistas",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"dentistas"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "dentistas",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"cpf\": 12345678901,\r\n    \"nome\": \"João da Silva\",\r\n    \"cro\": \"12345\",\r\n    \"especialidade\": \"Odontologia Geral\",\r\n    \"email\": \"joao.silva@example.com\",\r\n    \"dataContratacao\": \"2024-10-05\",\r\n    \"clinica\": {\r\n        \"cnpj\": 12345678000195\r\n    },\r\n    \"endereco\": {\r\n        \"rua\": \"Rua Exemplo\",\r\n        \"numero\": 123,\r\n        \"complemento\": \"Apto 1\",\r\n        \"bairro\": \"Centro\",\r\n        \"cidade\": \"São Paulo\",\r\n        \"estado\": \"SP\",\r\n        \"cep\": 12345678\r\n    },\r\n    \"telefone\": {\r\n        \"numero\": \"11987654321\",\r\n        \"tipo\": \"CELULAR\"\r\n    }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/dentistas",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"dentistas"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "dentistas",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/dentistas/12345678901",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"dentistas",
+						"12345678901"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "atendimentos",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/atendimentos/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"atendimentos",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "atendimentos",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"tipoProcedimento\": \"Consulta de Avaliação\",\r\n  \"descricao\": \"Avaliação inicial do paciente para diagnóstico\",\r\n  \"dataAtendimento\": \"2024-06-01\",\r\n  \"custoEstimado\": 150.0,\r\n  \"paciente\": {\r\n    \"cpf\": \"123.456.789-00\"\r\n  },\r\n  \"dentista\": {\r\n    \"cpf\": \"234.567.890-01\"\r\n  }\r\n}\r\n\r\n\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/atendimentos",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"atendimentos"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "atendimentos",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/atendimentos",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"atendimentos"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "clinicas",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"cnpj\": \"12345678000195\",\r\n    \"nome\": \"Clínica Exemplo editada\",\r\n    \"usuario\": {\r\n        \"email\": \"joao@example.com\",\r\n        \"senha\": \"123456\"\r\n    },\r\n    \"endereco\": {\r\n        \"rua\": \"Rua das Flores\",\r\n        \"numero\": 21,\r\n        \"complemento\": \"Ao lado da escola\",\r\n        \"bairro\": \"Centro\",\r\n        \"cidade\": \"São Paulo\",\r\n        \"estado\": \"SP\",\r\n        \"cep\": \"01234567\"\r\n    },\r\n    \"telefone\":\r\n        {\r\n            \"numero\": \"(11) 98765-4321\",\r\n            \"tipo\": \"RESIDENCIAL\"\r\n        }\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/clinicas/12345678000195",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"clinicas",
+						"12345678000195"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "pacientes",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "    {\r\n        \"cnpj\": \"12.345.678/0001-90\",\r\n        \"nome\": \"Clínica SP editada\",\r\n        \"usuario\": {\r\n            \"id\": 1,\r\n            \"email\": \"usuario1@email.com\",\r\n            \"senha\": \"senha123\",\r\n            \"status\": \"ATIVO\"\r\n        },\r\n        \"endereco\": {\r\n            \"id\": 1,\r\n            \"rua\": \"Rua A\",\r\n            \"numero\": 100,\r\n            \"complemento\": \"Apto 201\",\r\n            \"bairro\": \"Centro\",\r\n            \"cidade\": \"São Paulo\",\r\n            \"estado\": \"SP\",\r\n            \"cep\": 12345678\r\n        },\r\n        \"telefone\": {\r\n            \"id\": 1,\r\n            \"numero\": \"(11) 98765-4321\",\r\n            \"tipo\": \"CELULAR\"\r\n        }\r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/clinicas/12.345.678/0001-90",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"clinicas",
+						"12.345.678",
+						"0001-90"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "dentistas",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"cpf\": 12345678901,\r\n    \"nome\": \"João da Silva editado\",\r\n    \"cro\": \"12345\",\r\n    \"especialidade\": \"Odontologia Geral\",\r\n    \"email\": \"joao.silva@example.com\",\r\n    \"dataContratacao\": \"2024-10-05\",\r\n    \"clinica\": {\r\n        \"cnpj\": 12345678000195\r\n    },\r\n    \"endereco\": {\r\n        \"rua\": \"Rua Exemplo\",\r\n        \"numero\": 123,\r\n        \"complemento\": \"Apto 1\",\r\n        \"bairro\": \"Centro\",\r\n        \"cidade\": \"São Paulo\",\r\n        \"estado\": \"SP\",\r\n        \"cep\": 12345678\r\n    },\r\n    \"telefone\": {\r\n        \"numero\": \"11987654321\",\r\n        \"tipo\": \"CELULAR\"\r\n    }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/dentistas/12345678901",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"dentistas",
+						"12345678901"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "atendimentos",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "    {\r\n        \"cnpj\": \"12.345.678/0001-90\",\r\n        \"nome\": \"Clínica SP editada\",\r\n        \"usuario\": {\r\n            \"id\": 1,\r\n            \"email\": \"usuario1@email.com\",\r\n            \"senha\": \"senha123\",\r\n            \"status\": \"ATIVO\"\r\n        },\r\n        \"endereco\": {\r\n            \"id\": 1,\r\n            \"rua\": \"Rua A\",\r\n            \"numero\": 100,\r\n            \"complemento\": \"Apto 201\",\r\n            \"bairro\": \"Centro\",\r\n            \"cidade\": \"São Paulo\",\r\n            \"estado\": \"SP\",\r\n            \"cep\": 12345678\r\n        },\r\n        \"telefone\": {\r\n            \"id\": 1,\r\n            \"numero\": \"(11) 98765-4321\",\r\n            \"tipo\": \"CELULAR\"\r\n        }\r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/clinicas/12.345.678/0001-90",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"clinicas",
+						"12.345.678",
+						"0001-90"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
