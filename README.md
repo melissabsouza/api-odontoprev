@@ -70,6 +70,36 @@ Body (exemplo):
 ```
 Resposta (201 Created)
 
+#### PUT /clinicas/{cnpj}
+Descrição: Atualiza uma clínica.
+
+Body (exemplo):
+```
+{
+    "cnpj": "12345678000195",
+    "nome": "Clínica Exemplo editada",
+    "usuario": {
+        "email": "joao@example.com",
+        "senha": "123456"
+    },
+    "endereco": {
+        "rua": "Rua das Flores",
+        "numero": 21,
+        "complemento": "Ao lado da escola",
+        "bairro": "Centro",
+        "cidade": "São Paulo",
+        "estado": "SP",
+        "cep": "01234567"
+    },
+    "telefone":
+        {
+            "numero": "(11) 98765-4321",
+            "tipo": "RESIDENCIAL"
+        }
+}
+
+```
+Resposta (200 OK)
 
 #### DELETE /clinicas/{cnpj}
 Descrição: Deleta uma clínica pelo CNPJ.
@@ -146,6 +176,37 @@ Body (exemplo):
   }
 }
 ```
+
+#### PUT /pacientes/{cpf}
+Descrição: Atualiza um paciente.
+
+Body (exemplo):
+```
+{
+    "cpf": 12345678900,
+    "nome": "John Doea",
+    "dataNascimento": "1990-01-01",
+    "genero": "Masculino",
+    "clinica": {
+        "cnpj": 23456789000101
+    },
+    "endereco": {
+        "rua": "Rua Exemplo",
+        "numero": 123,
+        "complemento": "Apto 1",
+        "bairro": "Bairro Exemplo",
+        "cidade": "Cidade Exemplo",
+        "estado": "Estado Exemplo",
+        "cep": 12345678
+    },
+    "telefone": {
+        "numero": "123456789",
+        "tipo": "CELULAR"
+    }
+}
+
+```
+Resposta (200 OK)
 
 #### DELETE /pacientes/{cpf}
 Descrição: Deleta um paciente pelo CPF.
@@ -233,6 +294,39 @@ Body (exemplo):
 ```
 Resposta (201 Created)
 
+#### PUT /dentistas/{cpf}
+Descrição: Atualiza um dentista.
+
+Body (exemplo):
+```
+{{
+    "cpf": 12345678901,
+    "nome": "João da Silva",
+    "cro": "12345",
+    "especialidade": "Odontologia Geral",
+    "email": "joao.silva@example.com",
+    "dataContratacao": "2024-10-05",
+    "clinica": {
+        "cnpj": 12345678000195
+    },
+    "endereco": {
+        "rua": "Rua Exemplo",
+        "numero": 123,
+        "complemento": "Apto 1",
+        "bairro": "Centro",
+        "cidade": "São Paulo",
+        "estado": "SP",
+        "cep": 12345678
+    },
+    "telefone": {
+        "numero": "11987654321",
+        "tipo": "CELULAR"
+    }
+}
+
+```
+Resposta (200 OK)
+
 #### DELETE /dentistas/{cpf}
 Descrição: Deleta um dentista pelo CPF.
 
@@ -249,7 +343,7 @@ Descrição: Deleta um dentista pelo CPF.
 ```
 4. Atendimentos
 
-#### GET /Atendimentos
+#### GET /atendimentos
 Descrição: Retorna uma lista de todos os atendimentos cadastrados.
 
 Resposta de exemplo:
@@ -358,7 +452,7 @@ Resposta de exemplo:
 }
 
 ```
-### POST /Atendimentos
+### POST /atendimentos
 Descrição: Cria um novo atendimento.
 
 Exemplo de corpo da requisição:
@@ -370,10 +464,32 @@ Exemplo de corpo da requisição:
   "paciente": {
   },
   "dentista": {
+    "cpf": "234.567.890-01"
   }
 }
 
 ```
+
+#### PUT /atendimentos/{id}
+Descrição: Atualiza um dentista.
+
+Body (exemplo):
+```
+{{
+  "tipoProcedimento": "Consulta de Avaliação",
+  "descricao": "Avaliação inicial do paciente para diagnóstico",
+  "dataAtendimento": "2024-06-07",
+  "custoEstimado": 300.0,
+  "paciente": {
+    "cpf": "123.456.789-00"
+  },
+  "dentista": {
+    "cpf": "234.567.890-01"
+  }
+}
+
+```
+Resposta (200 OK)
 
 Descrição: Deleta um atendimento com base no ID.
 
@@ -391,7 +507,7 @@ Resposta (200 OK):
 }
 ```
 # Testes no Postman 
-Testes no postman: \
+[Testes no postman](teste-api-sprint-2.postman_collection)
 
 ---
 
@@ -416,7 +532,7 @@ corrigir essas inconsistências para garantir um mapeamento mais adequado e a in
 ---
 # Diagrama de Classes
 
-![Classes](src/main/resources/diagramas/Class-Diagram0.jpg) 
+![Classes](src/main/resources/diagramas/Class-Diagram0.jpg) - editar 
 
 ---
 
@@ -426,6 +542,13 @@ corrigir essas inconsistências para garantir um mapeamento mais adequado e a in
 ---
 # Vídeo
 
+🔗 [pitch]()
+---
+
+---
+# Cronograma
+
+🔗[Trello](https://trello.com/invite/b/665493cc36b64a32044a7b22/ATTI49dd2fd15fefc143c1838249b562bcd5982876D7/gestao-de-projetos-challenge)
 ---
 
 
