@@ -1,6 +1,6 @@
 package fiap.tds.apiodontoprev.models;
 
-import fiap.tds.odontoprev_api.enums.TipoTelefone;
+import fiap.tds.apiodontoprev.enums.TipoTelefone;
 import jakarta.persistence.*;
 import lombok.Data;
 import lombok.ToString;

@@ -1,6 +1,6 @@
 package fiap.tds.apiodontoprev.dto;
 
-import fiap.tds.odontoprev_api.enums.StatusUsuario;
+import fiap.tds.apiodontoprev.enums.StatusUsuario;
 import lombok.Data;
 
 @Data

@@ -1,6 +1,6 @@
 package fiap.tds.apiodontoprev.dto;
 
-import fiap.tds.odontoprev_api.enums.TipoTelefone;
+import fiap.tds.apiodontoprev.enums.TipoTelefone;
 import lombok.Data;
 
 @Data
