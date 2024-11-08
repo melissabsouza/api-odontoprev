@@ -535,7 +535,7 @@ corrigir essas inconsistências para garantir um mapeamento mais adequado e a in
 ---
 # Diagrama de Classes
 
-![Classes](src/main/resources/diagramas/Class-Diagram0.jpg) - editar 
+![Classes](src/main/resources/diagramas/class_diagram2.jpg)
 
 ---
 
